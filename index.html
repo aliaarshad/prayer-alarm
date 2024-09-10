@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prayer Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="wrapper">
+<div class="hero">
+<img src="clock.svg" alt="clock">
+<h1>Prayer Alarm Clock</h1>
+</div>
+<h2>Current Time: </br><span id="currentTime"></span></h2>
+<div class="content">
+	<label>Fajar</label>
+	<input type="time" id="alarmFajarTime">
+	<button onclick="setFajarAlarm();">Set Alarm</button>
+	<button onclick="alarmSound.pause();">Stop Alarm</button>
+</br></br>
+
+	<label>Zuhar</label>
+	<input type="time" id="alarmZuharTime">
+	<button onclick="setZuharAlarm();">Set Alarm</button>
+	<button onclick="alarmSound.pause();">Stop Alarm</button>
+</br></br>
+
+	<label>Asar</label>
+	<input type="time" id="alarmAsarTime">
+	<button onclick="setAsarAlarm();">Set Alarm</button>
+	<button onclick="alarmSound.pause();">Stop Alarm</button>
+</br></br>
+
+	<label>Maghrib</label>
+	<input type="time" id="alarmMaghribTime">
+	<button onclick="setMaghribAlarm();">Set Alarm</button>
+	<button onclick="alarmSound.pause();">Stop Alarm</button>
+</br></br>
+
+	<label>Isha</label>
+	<input type="time" id="alarmIshaTime">
+	<button onclick="setIshaAlarm();">Set Alarm</button>
+	<button onclick="alarmSound.pause();">Stop Alarm</button>
+</div>
+</div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
